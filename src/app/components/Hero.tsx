@@ -48,8 +48,8 @@ export function Hero() {
 
       <div className="relative z-10 text-center max-w-4xl">
         <motion.h1
-          className="mb-8"
-          style={{ 
+          className="mb-8 text-7xl md:text-8xl lg:text-9xl"
+          style={{
             fontFamily: 'var(--font-accent)',
             fontStyle: 'italic',
             color: 'var(--pastel-pink)',
