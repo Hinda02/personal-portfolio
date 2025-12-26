@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
 import { GraduationCap, Heart, Briefcase, Coffee } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function About() {
   const facts = [
@@ -28,8 +27,8 @@ export function About() {
           transition={{ duration: 0.8 }}
         >
           <div className="relative rounded-3xl overflow-hidden" style={{ boxShadow: '0 8px 32px rgba(255, 172, 199, 0.2)', border: '3px solid var(--light-pink)' }}>
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1623594675959-02360202d4d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0fGVufDF8fHx8MTc2NjYzNzkyN3ww&ixlib=rb-4.1.0&q=80&w=1080"
+            <img
+              src="/images/profile-photo.png"
               alt="Hinda"
               className="w-full aspect-[3/4] object-cover"
             />
