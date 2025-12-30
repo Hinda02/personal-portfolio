@@ -13,8 +13,8 @@ export function Contact() {
 
   const contactLinks = [
     { icon: Mail, label: 'Email', href: '#', isEmail: true },
-    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com', isEmail: false },
-    { icon: Github, label: 'GitHub', href: 'https://github.com', isEmail: false }
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/hinda-habib-developpement-management-informatique', isEmail: false },
+    { icon: Github, label: 'GitHub', href: 'https://github.com/Hinda02', isEmail: false }
   ];
 
   return (
@@ -30,7 +30,7 @@ export function Contact() {
             Let's Connect
           </h2>
           <p className="mb-12 text-lg" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
-            Whether it's a project, an opportunity, or just to say hello — I'd love to hear from you.
+            Whether it's a project, an opportunity, or just to say hello, I'd love to hear from you.
           </p>
 
           {/* Contact links */}
