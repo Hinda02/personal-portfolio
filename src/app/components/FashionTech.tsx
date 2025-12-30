@@ -26,7 +26,7 @@ export function FashionTech() {
             Where Fashion Meets Technology
           </h2>
           <p className="max-w-3xl mx-auto mb-12" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
-            I'm fascinated by how technology is reshaping the fashion industry — from AI-powered personalization to sustainable supply chains. I'm actively seeking opportunities to work at this intersection.
+            I'm fascinated by how technology is reshaping the fashion industry, from AI-powered personalization to sustainable supply chains. I'm actively seeking opportunities to work at this intersection.
           </p>
         </motion.div>
 
