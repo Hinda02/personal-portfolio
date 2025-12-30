@@ -2,10 +2,19 @@ import { motion } from 'motion/react';
 import { Mail, Linkedin, Github, Sparkles } from 'lucide-react';
 
 export function Contact() {
+  // Dynamic email handler
+  const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const email = 'contact@hinda-habib.site';
+    const subject = 'Hello Hinda!';
+    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+    window.location.href = mailtoUrl;
+  };
+
   const contactLinks = [
-    { icon: Mail, label: 'Email', href: 'mailto:hinda@example.com' },
-    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
-    { icon: Github, label: 'GitHub', href: 'https://github.com' }
+    { icon: Mail, label: 'Email', href: '#', isEmail: true },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com', isEmail: false },
+    { icon: Github, label: 'GitHub', href: 'https://github.com', isEmail: false }
   ];
 
   return (
@@ -30,9 +39,10 @@ export function Contact() {
               <motion.a
                 key={index}
                 href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-4 rounded-full transition-all duration-300"
+                onClick={link.isEmail ? handleEmailClick : undefined}
+                target={link.isEmail ? undefined : "_blank"}
+                rel={link.isEmail ? undefined : "noopener noreferrer"}
+                className="p-4 rounded-full transition-all duration-300 cursor-pointer"
                 style={{
                   backgroundColor: 'var(--pastel-pink)',
                   boxShadow: '0 4px 16px rgba(255, 214, 224, 0.3)'
