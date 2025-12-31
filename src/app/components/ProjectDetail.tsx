@@ -17,7 +17,12 @@ const projectData: Record<string, any> = {
   unicovoit: {
     title: 'UniCovoit',
     tagline: 'Campus carpooling made easy',
-    image: 'https://images.unsplash.com/photo-1685456891912-c09f9cd252eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjYW1wdXMlMjB1bml2ZXJzaXR5fGVufDF8fHx8MTc2NjY3Njc2Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: '/images/projects/unicovoit-home.png',
+    gallery: [
+      { src: '/images/projects/unicovoit-home.png', caption: 'Homepage with search interface' },
+      { src: '/images/projects/unicovoit-results.png', caption: 'Search results showing available rides' },
+      { src: '/images/projects/unicovoit-details.png', caption: 'Trip details and booking page' }
+    ],
     problem: 'Students at Paris-Dauphine lack an efficient way to share rides and reduce transportation costs.',
     solution: 'A full-stack web application enabling students to offer and find carpooling opportunities on campus.',
     role: 'Full-Stack Developer',
@@ -97,13 +102,67 @@ export function ProjectDetail() {
         </p>
 
         <div className="rounded-3xl overflow-hidden" style={{ boxShadow: '0 16px 48px rgba(0, 0, 0, 0.1)' }}>
-          <ImageWithFallback
+          <img
             src={project.image}
             alt={project.title}
             className="w-full aspect-video object-cover"
+            onError={(e) => {
+              // Fallback to placeholder if image not found
+              (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1685456891912-c09f9cd252eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjYW1wdXMlMjB1bml2ZXJzaXR5fGVufDF8fHx8MTc2NjY3Njc2Mnww&ixlib=rb-4.1.0&q=80&w=1080';
+            }}
           />
         </div>
       </motion.section>
+
+      {/* Gallery Section (if project has multiple images) */}
+      {project.gallery && project.gallery.length > 1 && (
+        <motion.section
+          className="py-12 px-6 max-w-7xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        >
+          <h3 className="mb-8 text-center" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
+            Screenshots
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            {project.gallery.map((item: any, index: number) => (
+              <motion.div
+                key={index}
+                className="rounded-2xl overflow-hidden"
+                style={{
+                  backgroundColor: 'white',
+                  boxShadow: '0 4px 16px rgba(0, 0, 0, 0.05)'
+                }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                whileHover={{
+                  scale: 1.02,
+                  boxShadow: '0 8px 24px rgba(255, 172, 199, 0.15)',
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <img
+                  src={item.src}
+                  alt={item.caption}
+                  className="w-full aspect-[4/3] object-cover"
+                  onError={(e) => {
+                    // Fallback to placeholder if image not found
+                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1685456891912-c09f9cd252eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjYW1wdXMlMjB1bml2ZXJzaXR5fGVufDF8fHx8MTc2NjY3Njc2Mnww&ixlib=rb-4.1.0&q=80&w=1080';
+                  }}
+                />
+                <div className="p-4">
+                  <p className="text-sm text-center" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
+                    {item.caption}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+      )}
 
       {/* Overview */}
       <motion.section
