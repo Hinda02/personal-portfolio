@@ -6,29 +6,29 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 const projectData: Record<string, any> = {
   haloguide: {
     title: 'HaloGuide',
-    tagline: 'Conception d\'un assistant IA pour la parentalité numérique',
-    subtitle: 'Projet académique — Concours Orange Jeunes Talents 2025-2026',
+    tagline: 'AI assistant for digital parenting guidance',
+    subtitle: 'Academic Project — Orange Young Talents Competition 2025-2026',
     image: '/images/projects/haloguide-main.png',
-    problem: 'Face à la multiplication des risques numériques (cyberharcèlement, contenus inadaptés, désinformation), les parents se retrouvent souvent démunis. Bien que de nombreuses ressources existent, elles restent dispersées, techniques et difficiles à actionner au moment où un problème concret survient.',
-    solution: 'HaloGuide est un concept d\'agent conversationnel pensé comme un copilote pour les parents. L\'idée centrale est de permettre à un parent de décrire sa situation avec ses propres mots, puis de recevoir une aide pour qualifier le problème, comprendre sa gravité et identifier les actions concrètes à entreprendre.',
-    context: 'Projet académique réalisé dans le cadre du Concours Orange Jeunes Talents 2025-2026, en équipe de 4 étudiants, sous la direction de Thierry Jaillet — Paris-Dauphine PSL, Master MIAGE. Ce projet est resté au stade de la conception et du prototypage.',
+    problem: 'Parents struggle to navigate digital risks like cyberbullying, inappropriate content, and misinformation. Despite available resources, they remain scattered and difficult to apply when issues arise.',
+    solution: 'HaloGuide is an AI conversational agent designed as a copilot for parents. It allows them to describe situations in their own words and receive help identifying problems, understanding severity, and taking concrete action.',
+    context: 'Academic project for Orange Young Talents Competition 2025-2026. Team of 4 students at Paris-Dauphine PSL, Master MIAGE. Remained at concept and prototype stage.',
     role: 'Research, UX Design & AI Strategy',
     contributions: [
-      'Recherche utilisateur — Conduite et analyse d\'entretiens avec des parents et professionnels',
-      'Benchmark concurrentiel — Analyse comparative des solutions existantes sur le marché de la cyberprotection',
-      'Conception fonctionnelle — Définition des parcours utilisateurs et scénarios d\'usage',
-      'Architecture technique — Exploration des approches RAG (Retrieval Augmented Generation) et intégration de bases de connaissances',
-      'Production documentaire — Rédaction du dossier de présentation et supports de communication'
+      'User research with parents and professionals',
+      'Competitive analysis of digital safety solutions',
+      'UX design: user journeys and use cases',
+      'Technical architecture using RAG (Retrieval Augmented Generation)',
+      'Documentation and presentation materials'
     ],
     tech: ['Python', 'NLP', 'RAG Architecture', 'OpenAI API', 'Figma', 'UX Research', 'AI Ethics'],
     skills: [
-      'Gestion de projet et travail collaboratif en équipe pluridisciplinaire',
-      'Recherche UX — Entretiens exploratoires, personas, scénarios d\'usage',
-      'Systèmes IA — Architectures conversationnelles, LLM, RAG, éthique (RGPD, AI Act)',
-      'Analyse stratégique — Benchmark sectoriel, positionnement, modèles économiques B2B2C',
-      'Communication professionnelle — Dossier structuré, pitch, vulgarisation technique'
+      'Project management and cross-functional collaboration',
+      'UX research: interviews, personas, scenarios',
+      'AI systems: conversational architecture, LLMs, RAG, ethics (GDPR, AI Act)',
+      'Strategic analysis: market positioning, B2B2C models',
+      'Professional communication: structured documentation, pitching'
     ],
-    learnings: 'Ce projet m\'a permis de développer une compréhension approfondie des enjeux de l\'IA appliquée à des contextes sensibles. J\'ai appris à équilibrer faisabilité technique et besoins utilisateurs, tout en intégrant les dimensions éthiques et réglementaires (protection des mineurs, RGPD, AI Act). L\'expérience de collaboration en équipe pluridisciplinaire m\'a également appris l\'importance de la structuration et de la communication dans la conduite de projets d\'innovation.'
+    learnings: 'Developed deep understanding of AI applied to sensitive contexts. Learned to balance technical feasibility with user needs while integrating ethical and regulatory dimensions (child protection, GDPR, AI Act). Collaboration taught me the importance of structure and communication in innovation projects.'
   },
   unicovoit: {
     title: 'UniCovoit',
