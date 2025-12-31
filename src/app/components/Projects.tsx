@@ -31,7 +31,7 @@ export function Projects() {
       title: 'This Portfolio',
       description: 'Designing and building my digital home',
       tags: ['React', 'Next.js', 'Tailwind', 'Figma'],
-      image: 'https://images.unsplash.com/photo-1633381638831-0ced80e2fee4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwdGVjaG5vbG9neSUyMGRpZ2l0YWx8ZW58MXx8fHwxNzY2Njc2NzYxfDA&ixlib=rb-4.1.0&q=80&w=1080'
+      image: '/images/projects/portfolio-main.png'
     }
   ];
 
@@ -122,6 +122,25 @@ export function Projects() {
           </motion.div>
         ))}
       </div>
+
+      {/* Fun footer message */}
+      <motion.div
+        className="text-center mt-16"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+      >
+        <p
+          className="text-sm italic"
+          style={{
+            color: 'var(--warm-gray)',
+            fontFamily: 'var(--font-body)'
+          }}
+        >
+          More exciting projects currently marinating... check back soon!
+        </p>
+      </motion.div>
     </section>
   );
 }
