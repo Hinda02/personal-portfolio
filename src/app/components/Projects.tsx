@@ -17,7 +17,7 @@ export function Projects() {
       title: 'UniCovoit',
       description: 'Campus carpooling application',
       tags: ['Java', 'Vaadin', 'Spring Boot', 'PostgreSQL'],
-      image: 'https://images.unsplash.com/photo-1685456891912-c09f9cd252eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjYW1wdXMlMjB1bml2ZXJzaXR5fGVufDF8fHx8MTc2NjY3Njc2Mnww&ixlib=rb-4.1.0&q=80&w=1080'
+      image: '/images/projects/unicovoit-home.png'
     },
     {
       id: 'connect-compliment',
