@@ -107,11 +107,8 @@ export function FashionTech() {
           <h2 className="mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
             Latest in Fashion × Technology
           </h2>
-          <p className="max-w-3xl mx-auto mb-4" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
-            Tracking the most interesting innovations at the intersection of fashion and technology — from AI-powered personalization to sustainable supply chains.
-          </p>
-          <p className="text-sm" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
-            Sources: Vogue Business • TechCrunch • WWD
+          <p className="max-w-3xl mx-auto mb-12" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
+            I'm fascinated by how technology is reshaping the fashion industry, from AI-powered personalization to sustainable supply chains. I'm actively seeking opportunities to work at this intersection.
           </p>
         </motion.div>
 

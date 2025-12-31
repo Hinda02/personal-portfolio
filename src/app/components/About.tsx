@@ -56,7 +56,7 @@ export function About() {
             Nice to meet you!
           </h2>
           <p className="mb-8 leading-relaxed" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
-            I'm Hinda — an IT student with a love for fashion, a knack for making complex things simple, and a belief that technology should feel human. Currently finishing my Master MIAGE at Paris-Dauphine while managing marketing and information systems for a sustainable fashion brand. I'm drawn to the space where code meets creativity.
+            I'm Hinda, an IT student with a love for fashion, a knack for making complex things simple, and a belief that technology should feel human. Currently finishing my Master MIAGE at Paris-Dauphine while managing marketing and information systems for a sustainable fashion brand. I'm drawn to the space where code meets creativity.
           </p>
 
           {/* Quick Facts Grid */}

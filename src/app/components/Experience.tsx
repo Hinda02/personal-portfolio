@@ -4,24 +4,31 @@ export function Experience() {
   const experiences = [
     {
       role: 'Marketing & IS Manager',
-      company: 'Bamboo Pajamas Brand',
+      company: 'RUS Brand',
       period: 'Present',
       description: 'Managing digital marketing campaigns and information systems for a sustainable fashion startup',
       side: 'right'
     },
     {
-      role: 'English Teacher',
+      role: 'Math and English Teacher',
       company: 'Part-time',
       period: '',
-      description: 'Creating B1/B2 courses, lesson plans, and educational materials',
+      description: 'Creating adapted teaching strategies, lesson plans, and educational materials',
       side: 'left'
     },
     {
-      role: 'Master MIAGE Student',
+      role: 'MIAGE/IT Student',
       company: 'Paris-Dauphine University',
       period: '2023 – Present',
       description: 'Specializing in business applications of IT, AI, and information systems',
       side: 'right'
+    },
+    {
+      role: 'Technical Computer Science Student',
+      company: 'EFREI',
+      period: '2022 – 2023',
+      description: 'Designing, developing, and maintaining software applications, from analyzing user needs to deploying solutions',
+      side: 'left'
     }
   ];
 
