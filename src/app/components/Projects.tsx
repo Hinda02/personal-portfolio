@@ -20,11 +20,11 @@ export function Projects() {
       image: '/images/projects/unicovoit-home.png'
     },
     {
-      id: 'connect-compliment',
-      title: 'Connect & Compliment',
-      description: 'Student wellbeing initiative at Paris-Dauphine',
-      tags: ['UX Research', 'Community Design'],
-      image: 'https://images.unsplash.com/photo-1633198362880-4864a5d6fa30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwd29ya3NwYWNlJTIwY29kaW5nfGVufDF8fHx8MTc2NjY3Njc2Mnww&ixlib=rb-4.1.0&q=80&w=1080'
+      id: 'process-mining',
+      title: 'Business Process Analytics',
+      description: 'Process mining and data-driven process improvement',
+      tags: ['Celonis', 'Process Mining', 'BPMN', 'Data Analysis'],
+      image: '/images/projects/process-mining-main.png'
     },
     {
       id: 'portfolio',
@@ -48,10 +48,10 @@ export function Projects() {
           Projects
         </p>
         <h2 className="mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
-          Things I've Built
+          Selected Work
         </h2>
         <p style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
-          A selection of academic and personal projects
+          Academic projects, technical work, and creative endeavors
         </p>
       </motion.div>
 
