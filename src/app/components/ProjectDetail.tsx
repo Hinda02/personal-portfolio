@@ -58,7 +58,7 @@ const projectData: Record<string, any> = {
   portfolio: {
     title: 'This Portfolio',
     tagline: 'A digital home that feels like me',
-    image: 'https://images.unsplash.com/photo-1633381638831-0ced80e2fee4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwdGVjaG5vbG9neSUyMGRpZ2l0YWx8ZW58MXx8fHwxNzY2Njc2NzYxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: '/images/projects/portfolio-main.png',
     problem: 'Most developer portfolios feel cold and impersonal — I wanted mine to reflect my personality and design aesthetic.',
     solution: 'A custom-built portfolio blending fashion editorial design with modern web technologies.',
     role: 'Designer & Developer',
