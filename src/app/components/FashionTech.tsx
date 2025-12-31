@@ -10,28 +10,28 @@ interface Article {
   source: string;
 }
 
+// Curated RSS Feed Sources for Fashion Tech - moved outside component to prevent re-creation
+const rssSources = [
+  {
+    name: 'Vogue Business',
+    url: 'https://www.voguebusiness.com/rss',
+    category: 'Fashion Tech & Innovation'
+  },
+  {
+    name: 'TechCrunch',
+    url: 'https://techcrunch.com/tag/fashion/feed/',
+    category: 'Fashion & Retail Tech'
+  },
+  {
+    name: 'WWD',
+    url: 'https://wwd.com/feed/',
+    category: 'Fashion Industry News'
+  }
+];
+
 export function FashionTech() {
   const [articles, setArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
-
-  // Curated RSS Feed Sources for Fashion Tech
-  const rssSources = [
-    {
-      name: 'Vogue Business',
-      url: 'https://www.voguebusiness.com/rss',
-      category: 'Fashion Tech & Innovation'
-    },
-    {
-      name: 'TechCrunch',
-      url: 'https://techcrunch.com/tag/fashion/feed/',
-      category: 'Fashion & Retail Tech'
-    },
-    {
-      name: 'WWD',
-      url: 'https://wwd.com/feed/',
-      category: 'Fashion Industry News'
-    }
-  ];
 
   useEffect(() => {
     const fetchArticles = async () => {
