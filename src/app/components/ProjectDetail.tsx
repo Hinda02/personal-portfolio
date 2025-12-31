@@ -6,13 +6,29 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 const projectData: Record<string, any> = {
   haloguide: {
     title: 'HaloGuide',
-    tagline: 'AI-powered parental guidance for digital safety',
-    image: 'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY2NjQxMzc0fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    problem: 'Parents struggle to monitor their children\'s digital activity effectively while respecting privacy.',
-    solution: 'An AI-powered platform that provides intelligent insights and recommendations for parental guidance.',
-    role: 'Business Strategy & AI Development',
-    tech: ['Python', 'Natural Language Processing', 'Machine Learning', 'Business Analysis'],
-    learnings: 'Learned how to balance technical feasibility with user needs, and developed skills in AI ethics and responsible technology design.'
+    tagline: 'Conception d\'un assistant IA pour la parentalité numérique',
+    subtitle: 'Projet académique — Concours Orange Jeunes Talents 2025-2026',
+    image: '/images/projects/haloguide-main.png',
+    problem: 'Face à la multiplication des risques numériques (cyberharcèlement, contenus inadaptés, désinformation), les parents se retrouvent souvent démunis. Bien que de nombreuses ressources existent, elles restent dispersées, techniques et difficiles à actionner au moment où un problème concret survient.',
+    solution: 'HaloGuide est un concept d\'agent conversationnel pensé comme un copilote pour les parents. L\'idée centrale est de permettre à un parent de décrire sa situation avec ses propres mots, puis de recevoir une aide pour qualifier le problème, comprendre sa gravité et identifier les actions concrètes à entreprendre.',
+    context: 'Projet académique réalisé dans le cadre du Concours Orange Jeunes Talents 2025-2026, en équipe de 4 étudiants, sous la direction de Thierry Jaillet — Paris-Dauphine PSL, Master MIAGE. Ce projet est resté au stade de la conception et du prototypage.',
+    role: 'Research, UX Design & AI Strategy',
+    contributions: [
+      'Recherche utilisateur — Conduite et analyse d\'entretiens avec des parents et professionnels',
+      'Benchmark concurrentiel — Analyse comparative des solutions existantes sur le marché de la cyberprotection',
+      'Conception fonctionnelle — Définition des parcours utilisateurs et scénarios d\'usage',
+      'Architecture technique — Exploration des approches RAG (Retrieval Augmented Generation) et intégration de bases de connaissances',
+      'Production documentaire — Rédaction du dossier de présentation et supports de communication'
+    ],
+    tech: ['Python', 'NLP', 'RAG Architecture', 'OpenAI API', 'Figma', 'UX Research', 'AI Ethics'],
+    skills: [
+      'Gestion de projet et travail collaboratif en équipe pluridisciplinaire',
+      'Recherche UX — Entretiens exploratoires, personas, scénarios d\'usage',
+      'Systèmes IA — Architectures conversationnelles, LLM, RAG, éthique (RGPD, AI Act)',
+      'Analyse stratégique — Benchmark sectoriel, positionnement, modèles économiques B2B2C',
+      'Communication professionnelle — Dossier structuré, pitch, vulgarisation technique'
+    ],
+    learnings: 'Ce projet m\'a permis de développer une compréhension approfondie des enjeux de l\'IA appliquée à des contextes sensibles. J\'ai appris à équilibrer faisabilité technique et besoins utilisateurs, tout en intégrant les dimensions éthiques et réglementaires (protection des mineurs, RGPD, AI Act). L\'expérience de collaboration en équipe pluridisciplinaire m\'a également appris l\'importance de la structuration et de la communication dans la conduite de projets d\'innovation.'
   },
   unicovoit: {
     title: 'UniCovoit',
