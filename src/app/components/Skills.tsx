@@ -6,22 +6,22 @@ export function Skills() {
     {
       icon: Code2,
       title: 'Development',
-      skills: 'Java, React, Next.js, Spring Boot, Vaadin, SQL'
+      skills: 'Java • Spring Boot • React • Next.js • SQL • REST APIs • Vaadin • Git'
     },
     {
       icon: Sparkles,
       title: 'Data & AI',
-      skills: 'Python, Machine Learning, Data Analysis'
+      skills: 'Python • Machine Learning • Neural Networks • Data Analysis • AI Ethics • Model Evaluation'
     },
     {
       icon: TrendingUp,
-      title: 'Business',
-      skills: 'Marketing Strategy, Project Management, Business Analysis'
+      title: 'Business & Strategy',
+      skills: 'Marketing Strategy • Project Management • Business Analysis • Product Development • E-commerce'
     },
     {
       icon: Wrench,
-      title: 'Tools',
-      skills: 'Figma, Git, PowerPoint, Notion'
+      title: 'Tools & Design',
+      skills: 'Figma • Git & GitHub • Notion • PowerPoint • UML • Agile Methodologies'
     }
   ];
 
