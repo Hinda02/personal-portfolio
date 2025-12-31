@@ -10,7 +10,7 @@ export function Projects() {
       title: 'HaloGuide',
       description: 'AI-powered parental guidance for digital safety',
       tags: ['Python', 'AI', 'NLP', 'Business Strategy'],
-      image: 'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY2NjQxMzc0fDA&ixlib=rb-4.1.0&q=80&w=1080'
+      image: '/images/projects/haloguide-main.png'
     },
     {
       id: 'unicovoit',
