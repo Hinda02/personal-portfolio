@@ -45,15 +45,23 @@ const projectData: Record<string, any> = {
     tech: ['Java', 'Vaadin', 'Spring Boot', 'PostgreSQL', 'REST API'],
     learnings: 'Gained hands-on experience with enterprise Java frameworks and learned the importance of clean architecture and database optimization.'
   },
-  'connect-compliment': {
-    title: 'Connect & Compliment',
-    tagline: 'Fostering wellbeing through kindness',
-    image: 'https://images.unsplash.com/photo-1633198362880-4864a5d6fa30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwd29ya3NwYWNlJTIwY29kaW5nfGVufDF8fHx8MTc2NjY3Njc2Mnww&ixlib=rb-4.1.0&q=80&w=1080',
-    problem: 'Students often feel isolated and disconnected from their campus community, impacting mental wellbeing.',
-    solution: 'A community-driven initiative to encourage positive interactions and compliments among students.',
-    role: 'UX Researcher & Community Designer',
-    tech: ['User Research', 'Community Building', 'UX Design', 'Social Impact'],
-    learnings: 'Developed empathy-driven design skills and learned how small interactions can create meaningful change in communities.'
+  'process-mining': {
+    title: 'Business Process Analytics & Process Mining',
+    tagline: 'Analyzing how business processes actually run using data',
+    image: '/images/projects/process-mining-main.png',
+    problem: 'Organizations often lack visibility into how their processes actually execute, leading to hidden inefficiencies, bottlenecks, and compliance issues that impact performance.',
+    solution: 'Process mining analyzes event logs to discover real process flows, identify bottlenecks and rework patterns, check conformance against expected behavior, and translate data insights into actionable improvement recommendations.',
+    role: 'Process Analyst & Data Analyst',
+    contributions: [
+      'Business process modeling using BPMN',
+      'Process discovery from real execution data and event logs',
+      'Identification of bottlenecks, rework patterns, and inefficiencies',
+      'Conformance checking between expected and actual process behavior',
+      'Performance analysis using KPIs and throughput times',
+      'Translation of data insights into process improvement recommendations'
+    ],
+    tech: ['Celonis', 'Process Mining', 'BPMN', 'Data Analysis', 'KPI Analysis'],
+    learnings: 'Learned to bridge the gap between data and business operations. Process mining reveals the reality of how work gets done, enabling evidence-based improvement rather than assumptions.'
   },
   portfolio: {
     title: 'This Portfolio',
