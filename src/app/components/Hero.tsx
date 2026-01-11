@@ -26,7 +26,7 @@ export function Hero() {
     <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-6" style={{ background: 'linear-gradient(135deg, var(--warm-cream) 0%, #FFF9F0 100%)' }}>
       {/* Decorative blobs */}
       <motion.div
-        className="absolute top-20 right-20 w-96 h-96 rounded-full opacity-30 blur-3xl"
+        className="absolute top-10 md:top-20 right-0 md:right-20 w-64 md:w-96 h-64 md:h-96 rounded-full opacity-30 blur-3xl"
         style={{ background: 'radial-gradient(circle, var(--pastel-pink) 0%, var(--pastel-yellow) 100%)' }}
         animate={{
           scale: [1, 1.1, 1],
@@ -36,7 +36,7 @@ export function Hero() {
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
       />
       <motion.div
-        className="absolute bottom-40 left-20 w-72 h-72 rounded-full opacity-20 blur-3xl"
+        className="absolute bottom-20 md:bottom-40 left-0 md:left-20 w-48 md:w-72 h-48 md:h-72 rounded-full opacity-20 blur-3xl"
         style={{ background: 'radial-gradient(circle, var(--pastel-yellow) 0%, var(--soft-blush) 100%)' }}
         animate={{
           scale: [1, 1.2, 1],

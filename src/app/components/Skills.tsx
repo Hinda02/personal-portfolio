@@ -42,11 +42,11 @@ export function Skills() {
         </h2>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-4 md:gap-6">
         {skillCategories.map((category, index) => (
           <motion.div
             key={index}
-            className="p-8 rounded-2xl"
+            className="p-5 md:p-8 rounded-2xl"
             style={{
               backgroundColor: 'var(--warm-cream)',
               borderLeft: '4px solid var(--pastel-pink)',
@@ -62,15 +62,15 @@ export function Skills() {
               transition: { duration: 0.3 }
             }}
           >
-            <div className="flex items-start gap-4">
-              <div className="p-3 rounded-xl" style={{ backgroundColor: 'var(--light-pink)' }}>
-                <category.icon size={28} style={{ color: 'var(--soft-blush)' }} />
+            <div className="flex items-start gap-3 md:gap-4">
+              <div className="p-2 md:p-3 rounded-xl" style={{ backgroundColor: 'var(--light-pink)' }}>
+                <category.icon size={24} className="md:w-7 md:h-7" style={{ color: 'var(--soft-blush)' }} />
               </div>
               <div className="flex-1">
-                <h3 className="mb-3" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
+                <h3 className="mb-2 md:mb-3 text-lg md:text-xl" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
                   {category.title}
                 </h3>
-                <p style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
+                <p className="text-sm md:text-base" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
                   {category.skills}
                 </p>
               </div>
