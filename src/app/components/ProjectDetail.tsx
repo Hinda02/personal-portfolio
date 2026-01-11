@@ -45,6 +45,32 @@ const projectData: Record<string, any> = {
     tech: ['Java', 'Vaadin', 'Spring Boot', 'PostgreSQL', 'REST API'],
     learnings: 'Gained hands-on experience with enterprise Java frameworks and learned the importance of clean architecture and database optimization.'
   },
+  'drop-calendar': {
+    title: 'Drop Calendar',
+    tagline: 'Fashion product drop planning tool',
+    image: '/images/projects/drop-calendar-kanban.png',
+    gallery: [
+      { src: '/images/projects/drop-calendar-kanban.png', caption: 'Kanban board with drag-and-drop status tracking' },
+      { src: '/images/projects/drop-calendar-drops.png', caption: 'All drops view with search and filters' },
+      { src: '/images/projects/drop-calendar-calendar.png', caption: 'Monthly calendar showing launch dates' },
+      { src: '/images/projects/drop-calendar-create.png', caption: 'Create new drop form with validation' }
+    ],
+    problem: 'Fashion brands struggle to coordinate product launches across multiple channels and teams. Existing tools are either too generic or lack features specific to fashion drop planning.',
+    solution: 'A production-ready web application for planning and managing fashion product launches. Features include kanban boards, calendar views, task management, email reminders, and multi-channel support.',
+    role: 'Full-Stack Developer & Product Designer',
+    contributions: [
+      'Authentication system with credentials and Google OAuth',
+      'Full CRUD operations for drop management',
+      'Interactive kanban board with drag-and-drop functionality',
+      'Monthly calendar view for launch date visualization',
+      'Task management system for each drop',
+      'Search and filter capabilities by title, status, channel, and date ranges',
+      'Responsive dashboard design',
+      'Email notification system with Resend integration'
+    ],
+    tech: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Prisma', 'MySQL', 'NextAuth.js', 'React Hook Form', 'Zod'],
+    learnings: 'Built a complete production application from concept to deployment. Learned to integrate complex state management with drag-and-drop interactions, implement robust authentication flows, and design database schemas for multi-tenant scenarios. This project taught me the importance of planning data models carefully and building reusable component systems.'
+  },
   'process-mining': {
     title: 'Business Process Analytics & Process Mining',
     tagline: 'Analyzing how business processes actually run using data',

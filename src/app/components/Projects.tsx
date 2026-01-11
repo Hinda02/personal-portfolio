@@ -13,6 +13,13 @@ export function Projects() {
       image: '/images/projects/haloguide-main.png'
     },
     {
+      id: 'drop-calendar',
+      title: 'Drop Calendar',
+      description: 'Fashion product drop planning and management tool',
+      tags: ['Next.js', 'TypeScript', 'Prisma', 'MySQL'],
+      image: '/images/projects/drop-calendar-kanban.png'
+    },
+    {
       id: 'unicovoit',
       title: 'UniCovoit',
       description: 'Campus carpooling application',
