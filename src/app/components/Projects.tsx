@@ -14,9 +14,9 @@ export function Projects() {
     },
     {
       id: 'drop-calendar',
-      title: 'Drop Calendar',
-      description: 'Fashion product drop planning and management tool',
-      tags: ['Next.js', 'TypeScript', 'Prisma', 'MySQL'],
+      title: '1 AI Prompt Challenge',
+      description: 'Building a complete production app with a single AI prompt',
+      tags: ['Next.js', 'TypeScript', 'Prisma', 'AI-Assisted'],
       image: '/images/projects/drop-calendar-kanban.png'
     },
     {
