@@ -34,7 +34,7 @@ export function Contact() {
           </p>
 
           {/* Contact links */}
-          <div className="flex justify-center gap-6 mb-12">
+          <div className="flex justify-center gap-4 md:gap-6 mb-12 flex-wrap">
             {contactLinks.map((link, index) => (
               <motion.a
                 key={index}

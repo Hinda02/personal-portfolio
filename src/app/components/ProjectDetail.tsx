@@ -113,15 +113,15 @@ export function ProjectDetail() {
 
       {/* Hero */}
       <motion.section
-        className="py-24 px-6 max-w-7xl mx-auto"
+        className="py-12 md:py-24 px-6 max-w-7xl mx-auto"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
+        <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
           {project.title}
         </h1>
-        <p className="text-xl mb-12" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
+        <p className="text-base md:text-xl mb-8 md:mb-12" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
           {project.tagline}
         </p>
 
@@ -146,10 +146,10 @@ export function ProjectDetail() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          <h3 className="mb-8 text-center" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
+          <h3 className="mb-6 md:mb-8 text-center text-xl md:text-2xl" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
             Screenshots
           </h3>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {project.gallery.map((item: any, index: number) => (
               <motion.div
                 key={index}
@@ -190,25 +190,25 @@ export function ProjectDetail() {
 
       {/* Overview */}
       <motion.section
-        className="py-12 px-6 max-w-5xl mx-auto"
+        className="py-8 md:py-12 px-6 max-w-5xl mx-auto"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.8 }}
       >
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div>
-            <h3 className="mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
+            <h3 className="mb-3 md:mb-4 text-xl md:text-2xl" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
               Problem
             </h3>
-            <p style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
+            <p className="text-sm md:text-base" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
               {project.problem}
             </p>
           </div>
           <div>
-            <h3 className="mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
+            <h3 className="mb-3 md:mb-4 text-xl md:text-2xl" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
               Solution
             </h3>
-            <p style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
+            <p className="text-sm md:text-base" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
               {project.solution}
             </p>
           </div>
@@ -217,22 +217,22 @@ export function ProjectDetail() {
 
       {/* Tech Stack */}
       <motion.section
-        className="py-12 px-6 max-w-5xl mx-auto"
+        className="py-8 md:py-12 px-6 max-w-5xl mx-auto"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.8 }}
       >
-        <h3 className="mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
+        <h3 className="mb-4 md:mb-6 text-xl md:text-2xl" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
           Tech Stack & My Role
         </h3>
-        <p className="mb-4" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
+        <p className="mb-4 text-sm md:text-base" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
           <strong>Role:</strong> {project.role}
         </p>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-2 md:gap-3">
           {project.tech.map((tech: string, index: number) => (
             <span
               key={index}
-              className="px-4 py-2 rounded-full"
+              className="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-sm md:text-base"
               style={{
                 backgroundColor: 'var(--pastel-yellow)',
                 color: 'var(--charcoal)',
@@ -247,16 +247,16 @@ export function ProjectDetail() {
 
       {/* Key Learnings */}
       <motion.section
-        className="py-12 px-6 max-w-5xl mx-auto mb-24"
+        className="py-8 md:py-12 px-6 max-w-5xl mx-auto mb-12 md:mb-24"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.8 }}
       >
-        <h3 className="mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
+        <h3 className="mb-4 md:mb-6 text-xl md:text-2xl" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
           Key Learnings
         </h3>
         <p
-          className="p-6 rounded-2xl"
+          className="p-4 md:p-6 rounded-2xl text-sm md:text-base"
           style={{
             backgroundColor: 'white',
             color: 'var(--warm-gray)',

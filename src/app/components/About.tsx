@@ -55,16 +55,16 @@ export function About() {
           <h2 className="mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
             Nice to meet you!
           </h2>
-          <p className="mb-8 leading-relaxed" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
+          <p className="mb-8 leading-relaxed text-sm md:text-base" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
             I'm Hinda, an IT student with a love for fashion, a knack for making complex things simple, and a belief that technology should feel human. Currently finishing my Master MIAGE at Paris-Dauphine while managing marketing and information systems for a sustainable fashion brand. I'm drawn to the space where code meets creativity.
           </p>
 
           {/* Quick Facts Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
             {facts.map((fact, index) => (
               <motion.div
                 key={index}
-                className="p-4 rounded-2xl flex items-center gap-3"
+                className="p-3 md:p-4 rounded-2xl flex items-center gap-3"
                 style={{
                   backgroundColor: 'var(--pastel-yellow)',
                   boxShadow: '0 4px 12px rgba(255, 244, 189, 0.3)'
@@ -75,8 +75,8 @@ export function About() {
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 whileHover={{ scale: 1.05, boxShadow: '0 6px 16px rgba(255, 244, 189, 0.5)' }}
               >
-                <fact.icon size={24} style={{ color: 'var(--charcoal)' }} />
-                <span style={{ color: 'var(--charcoal)', fontFamily: 'var(--font-body)' }}>
+                <fact.icon size={20} className="md:w-6 md:h-6 flex-shrink-0" style={{ color: 'var(--charcoal)' }} />
+                <span className="text-sm md:text-base" style={{ color: 'var(--charcoal)', fontFamily: 'var(--font-body)' }}>
                   {fact.text}
                 </span>
               </motion.div>
