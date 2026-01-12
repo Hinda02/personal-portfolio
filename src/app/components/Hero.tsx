@@ -48,7 +48,7 @@ export function Hero() {
 
       <div className="relative z-10 text-center max-w-4xl">
         <motion.h1
-          className="mb-8 text-5xl md:text-6xl lg:text-7xl"
+          className="mb-6 md:mb-8 text-4xl md:text-6xl lg:text-7xl"
           style={{
             fontFamily: 'var(--font-accent)',
             fontStyle: 'italic',
@@ -63,14 +63,14 @@ export function Hero() {
         </motion.h1>
 
         <motion.div
-          className="min-h-[5rem] md:min-h-[4rem] mb-8 md:mb-12 flex items-center justify-center px-4 w-full"
+          className="min-h-[3.5rem] md:min-h-[4rem] mb-6 md:mb-12 flex items-center justify-center px-4 w-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           <motion.p
             key={taglineIndex}
-            className="text-lg md:text-2xl lg:text-3xl text-center absolute"
+            className="text-base md:text-2xl lg:text-3xl text-center absolute whitespace-nowrap"
             style={{
               fontFamily: 'var(--font-heading)',
               color: 'var(--charcoal)'
@@ -85,14 +85,14 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 items-center justify-center"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
           <button
             onClick={scrollToAbout}
-            className="px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            className="px-6 py-3 sm:px-8 sm:py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg text-sm sm:text-base"
             style={{
               backgroundColor: 'var(--pastel-pink)',
               color: 'var(--charcoal)',
@@ -103,7 +103,7 @@ export function Hero() {
           </button>
           <a
             href="#contact"
-            className="text-lg transition-all duration-300 hover:translate-x-2"
+            className="text-base sm:text-lg transition-all duration-300 hover:translate-x-2"
             style={{ color: 'var(--charcoal)' }}
           >
             Get in touch ↓
