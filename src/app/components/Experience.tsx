@@ -50,27 +50,22 @@ export function Experience() {
       </motion.div>
 
       <div className="relative">
-        {/* Vertical line - hidden on mobile, centered on desktop */}
+        {/* Vertical line - only visible on desktop, centered */}
         <div
           className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full"
           style={{ backgroundColor: 'var(--pastel-pink)' }}
         />
-        {/* Vertical line for mobile - positioned on left */}
-        <div
-          className="md:hidden absolute left-3 top-0 w-0.5 h-full"
-          style={{ backgroundColor: 'var(--pastel-pink)' }}
-        />
 
         {/* Timeline items */}
-        <div className="space-y-8 md:space-y-12">
+        <div className="space-y-6 md:space-y-12">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
               className={`flex items-center gap-4 md:gap-8 ${exp.side === 'left' ? 'md:flex-row-reverse' : ''}`}
-              initial={{ opacity: 0, x: exp.side === 'left' ? 50 : -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2, duration: 0.6 }}
+              transition={{ delay: index * 0.1, duration: 0.6 }}
             >
               {/* Card */}
               <div className="flex-1">
@@ -103,9 +98,9 @@ export function Experience() {
                 </motion.div>
               </div>
 
-              {/* Node */}
+              {/* Node - only visible on desktop */}
               <motion.div
-                className="relative z-10 w-6 h-6 rounded-full border-4 flex-shrink-0"
+                className="hidden md:flex relative z-10 w-6 h-6 rounded-full border-4 flex-shrink-0"
                 style={{
                   backgroundColor: 'var(--pastel-yellow)',
                   borderColor: 'var(--pastel-pink)'
