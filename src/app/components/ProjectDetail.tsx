@@ -90,6 +90,33 @@ const projectData: Record<string, any> = {
     tech: ['Celonis', 'Process Mining', 'BPMN', 'Data Analysis', 'KPI Analysis'],
     learnings: 'Learned to bridge the gap between data and business operations. Process mining reveals the reality of how work gets done, enabling evidence-based improvement rather than assumptions.'
   },
+  'supernutri-score': {
+    title: 'SuperNutri-Score',
+    tagline: 'Transparent multicriteria food evaluation system',
+    image: '/images/projects/supernutri-heatmap.png',
+    gallery: [
+      { src: '/images/projects/supernutri-heatmap.png', caption: 'Comparison heatmap: Nutri-Score vs SuperNutri-Score classifications' },
+      { src: '/images/projects/supernutri-interface.png', caption: 'Interactive Gradio interface with real-time analysis' },
+      { src: '/images/projects/supernutri-weights.png', caption: 'Configurable criteria weights for ELECTRE TRI' },
+      { src: '/images/projects/supernutri-profiles.png', caption: 'Category profile thresholds (b1-b6) configuration' }
+    ],
+    problem: 'The French Nutri-Score system, while effective at communicating nutritional quality, uses a compensatory algorithm that can produce counterintuitive results. It fails to account for environmental impact, food additives, or organic certification, limiting its ability to guide consumers toward truly healthy and sustainable food choices.',
+    solution: 'SuperNutri-Score implements three interconnected evaluation systems: (1) A faithful Nutri-Score calculator reproducing the official March 2025 algorithm, (2) ELECTRE TRI multicriteria classification using eight criteria including additives, and (3) A hybrid SuperNutri-Score combining ELECTRE TRI (70%) with Green-Score environmental rating (30%) plus organic bonus, producing transparent A\'\'–E\'\' ratings with consumer guidance.',
+    context: 'Academic project for "Transparence des Algorithmes pour la Décision" course at Université Paris Dauphine-PSL. Validated against 123 sauce products from OpenFoodFacts database.',
+    role: 'Data Scientist & Algorithm Designer',
+    contributions: [
+      'Faithful implementation of Nutri-Score algorithm with special protein rule',
+      'ELECTRE TRI classification with pessimistic/optimistic procedures (λ=0.6, λ=0.7)',
+      'Hybrid scoring combining nutritional, environmental, and quality dimensions',
+      'Interactive Gradio interface with configurable parameters and real-time evaluation',
+      'Data validation pipeline comparing calculated vs OpenFoodFacts reference scores',
+      'Statistical analysis with confusion matrices and classification reports',
+      'Visualization suite: heatmaps, distribution histograms, comparative charts',
+      'Comprehensive documentation in Jupyter Notebook format'
+    ],
+    tech: ['Python', 'Jupyter Notebook', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib', 'Seaborn', 'Gradio', 'OpenPyXL', 'ELECTRE TRI'],
+    learnings: 'Learned to implement complex multicriteria decision analysis methods (ELECTRE TRI) and bridge theoretical algorithms with practical interfaces. The project taught me how to balance mathematical rigor with user transparency, validate models against real-world data, and design interactive tools that make algorithmic decisions explainable. Understanding how compensatory vs non-compensatory methods produce different classifications deepened my appreciation for algorithmic transparency in consumer-facing systems.'
+  },
   portfolio: {
     title: 'This Portfolio',
     tagline: 'A digital home that feels like me',
