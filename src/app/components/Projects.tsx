@@ -34,6 +34,13 @@ export function Projects() {
       image: '/images/projects/process-mining-main.png'
     },
     {
+      id: 'supernutri-score',
+      title: 'SuperNutri-Score',
+      description: 'Transparent food evaluation with ELECTRE TRI algorithm',
+      tags: ['Python', 'Data Science', 'ELECTRE TRI', 'Gradio'],
+      image: '/images/projects/supernutri-heatmap.png'
+    },
+    {
       id: 'portfolio',
       title: 'This Portfolio',
       description: 'Designing and building my digital home',
