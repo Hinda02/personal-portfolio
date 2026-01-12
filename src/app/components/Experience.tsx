@@ -49,19 +49,53 @@ export function Experience() {
         </h2>
       </motion.div>
 
-      <div className="relative">
-        {/* Vertical line - only visible on desktop, centered */}
+      {/* Mobile view - simple cards */}
+      <div className="md:hidden space-y-4">
+        {experiences.map((exp, index) => (
+          <motion.div
+            key={index}
+            className="p-4 rounded-2xl"
+            style={{
+              backgroundColor: 'var(--warm-cream)',
+              boxShadow: '0 4px 16px rgba(0, 0, 0, 0.05)'
+            }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1, duration: 0.5 }}
+          >
+            <h3 className="mb-1 text-base font-semibold" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
+              {exp.role}
+            </h3>
+            <p className="mb-1 text-sm" style={{ color: 'var(--soft-blush)', fontFamily: 'var(--font-heading)' }}>
+              {exp.company}
+            </p>
+            {exp.period && (
+              <p className="mb-2 text-xs" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
+                {exp.period}
+              </p>
+            )}
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
+              {exp.description}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Desktop view - timeline */}
+      <div className="hidden md:block relative">
+        {/* Vertical line */}
         <div
-          className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full"
+          className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full"
           style={{ backgroundColor: 'var(--pastel-pink)' }}
         />
 
         {/* Timeline items */}
-        <div className="space-y-6 md:space-y-12">
+        <div className="space-y-12">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
-              className={`flex items-center gap-4 md:gap-8 ${exp.side === 'left' ? 'md:flex-row-reverse' : ''}`}
+              className={`flex items-center gap-8 ${exp.side === 'left' ? 'flex-row-reverse' : ''}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -70,7 +104,7 @@ export function Experience() {
               {/* Card */}
               <div className="flex-1">
                 <motion.div
-                  className="p-4 md:p-6 rounded-2xl"
+                  className="p-6 rounded-2xl"
                   style={{
                     backgroundColor: 'var(--warm-cream)',
                     boxShadow: '0 4px 16px rgba(0, 0, 0, 0.05)'
@@ -81,10 +115,10 @@ export function Experience() {
                     transition: { duration: 0.3 }
                   }}
                 >
-                  <h3 className="mb-2 text-lg md:text-xl" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
+                  <h3 className="mb-2 text-xl" style={{ fontFamily: 'var(--font-heading)', color: 'var(--charcoal)' }}>
                     {exp.role}
                   </h3>
-                  <p className="mb-2 text-sm md:text-base" style={{ color: 'var(--soft-blush)', fontFamily: 'var(--font-heading)' }}>
+                  <p className="mb-2 text-base" style={{ color: 'var(--soft-blush)', fontFamily: 'var(--font-heading)' }}>
                     {exp.company}
                   </p>
                   {exp.period && (
@@ -92,15 +126,15 @@ export function Experience() {
                       {exp.period}
                     </p>
                   )}
-                  <p className="text-sm md:text-base" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
+                  <p className="text-base" style={{ color: 'var(--warm-gray)', fontFamily: 'var(--font-body)' }}>
                     {exp.description}
                   </p>
                 </motion.div>
               </div>
 
-              {/* Node - only visible on desktop */}
+              {/* Node */}
               <motion.div
-                className="hidden md:flex relative z-10 w-6 h-6 rounded-full border-4 flex-shrink-0"
+                className="relative z-10 w-6 h-6 rounded-full border-4 flex-shrink-0"
                 style={{
                   backgroundColor: 'var(--pastel-yellow)',
                   borderColor: 'var(--pastel-pink)'
@@ -111,8 +145,8 @@ export function Experience() {
                 transition={{ delay: index * 0.2 + 0.3, duration: 0.4 }}
               />
 
-              {/* Empty space for alignment - only on desktop */}
-              <div className="hidden md:block flex-1" />
+              {/* Empty space for alignment */}
+              <div className="flex-1" />
             </motion.div>
           ))}
         </div>

@@ -63,14 +63,14 @@ export function Hero() {
         </motion.h1>
 
         <motion.div
-          className="h-20 md:h-16 mb-8 md:mb-12 flex items-center justify-center px-4"
+          className="min-h-[5rem] md:min-h-[4rem] mb-8 md:mb-12 flex items-center justify-center px-4 w-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           <motion.p
             key={taglineIndex}
-            className="text-lg md:text-2xl lg:text-3xl text-center"
+            className="text-lg md:text-2xl lg:text-3xl text-center absolute"
             style={{
               fontFamily: 'var(--font-heading)',
               color: 'var(--charcoal)'
